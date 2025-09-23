@@ -21,7 +21,7 @@ const Feature130 = () => {
             </p>
                     </div>
                     <img
-                        src="/customer.png"
+                        src="/Customer.png"
                         alt="placeholder"
                         className="max-h-52 w-full rounded-t-md object-cover shadow-[0_0_10px_rgb(0,0,0,0.2)]"
                     />
