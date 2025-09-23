@@ -38,7 +38,7 @@ const Footer8 = ({
         url: "/",
         src: "/Logos.png",
         alt: "logo",
-        title: "Logoo",
+        title: " ",
     },
 }: Footer8Props) => {
     return (
