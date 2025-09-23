@@ -1,15 +1,14 @@
-
-// next.config.ts
 import { type NextConfig } from 'next';
+
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // Sets the prefix for all assets
-  // Must match the repository name exactly
-  assetPrefix: '/CRM-LandingPage/',
   images: {
     unoptimized: true,
   },
+  basePath: isProd ? '/CRM-LandingPage' : '',
+  assetPrefix: isProd ? '/CRM-LandingPage/' : '',
 };
 
 export default nextConfig;
