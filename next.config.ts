@@ -1,14 +1,15 @@
+
 // next.config.ts
 import { type NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
+  // Sets the prefix for all assets
+  // Must match the repository name exactly
+  assetPrefix: '/CRM-LandingPage/',
   images: {
     unoptimized: true,
   },
-  // New: Use assetPrefix for correct pathing.
-  // Replace with your repository name.
-  assetPrefix: '/CRM-LandingPage/',
 };
 
 export default nextConfig;
