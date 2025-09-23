@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy CRM-LandingPage to GitHub Pages
 
 on:
@@ -26,13 +25,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-    - name: Build project
-      run: npm run build
+      - name: Build project
+        run: npm run build
 
-  - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-          publish_branch: main # This is the crucial change
+          publish_branch: main
           cname: crm.rewan.ai
