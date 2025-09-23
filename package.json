@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "next build" // ✅ no next export
+    "deploy": "next build"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",
