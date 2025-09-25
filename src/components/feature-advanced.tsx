@@ -1,5 +1,6 @@
 import { Combine, Gauge, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { shiba } from "@/lib/fonts"; // adjust path if needed
 
 const Feature204 = () => {
     return (
@@ -18,9 +19,10 @@ const Feature204 = () => {
                     {/* Right Content */}
                     <div className="flex max-w-2xl flex-col justify-between gap-10">
                         <div className="text-center lg:text-left">
-                            <h2 className="text-5xl font-medium text-balance lg:text-6xl">
+                            <h2 className={`${shiba.className} text-5xl font-normal text-balance lg:text-6xl`}>
                                 Designed for Your Success.
-                            </h2>
+</h2>
+
                             <p className="mt-6 text-lg text-muted-foreground">
                                 Streamline your operations with powerful features that simplify management and boost efficiency.
                             </p>

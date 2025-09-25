@@ -1,13 +1,14 @@
 import { PersonStanding, Timer, Zap, ZoomIn } from "lucide-react";
-
+import { shiba } from "@/lib/fonts"; 
 const Feature10 = () => {
     return (
         <section id="whyUs" className="py-32">
             <div className="mx-auto w-full max-w-7xl px-6">
                 <p className="mb-4 text-xs text-muted-foreground">Why Rewan CRM?</p>
-                <h2 className="text-3xl font-medium lg:text-4xl">
-                    Intelligent partner that works for you
-        </h2>
+               
+        <h2 className={`${shiba.className} text-3xl font-normal lg:text-4xl`}>
+  Intelligent partner that works for you
+</h2>
 
                 <div className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-20 lg:grid-cols-4">
                     <div className="relative flex gap-3 rounded-lg border-dashed md:block md:border-l md:p-5">

@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import React from "react";
+import { shiba } from "@/lib/fonts"; // ✅ adjust path if needed
 
 import { cn } from "@/lib/utils";
 
@@ -15,15 +16,19 @@ const Hero223 = () => {
                 <div className="bg-background pointer-events-none absolute inset-0 z-20 h-full w-full [mask-image:radial-gradient(transparent,white)]" />
                 <Boxes className="scale-150" />
 
-                <h1 className="z-99 relative max-w-4xl text-5xl font-medium tracking-tight md:text-7xl">
-                    <span className="text-muted-foreground/70 mr-3">
-                        The AI-Powered
-      </span>
-                    <LineShadowText> CRM </LineShadowText>
-                    <span className="text-muted-foreground/70"> that Thinks and Acts for You
-</span>
-                    <span>.</span>
+                <h1 className={`${shiba.className} z-99 relative max-w-4xl text-5xl font-normal tracking-tight md:text-7xl`}>
+                    <div>
+                        <span className="text-muted-foreground/70 mr-3">The AI-Powered</span>
+                        <LineShadowText>CRM</LineShadowText>
+                    </div>
+                    <div>
+                        <span className="text-muted-foreground/70">that Thinks and Acts for You</span>
+                        <span>.</span>
+                    </div>
                 </h1>
+
+
+
 
                 <p className="z-99 text-muted-foreground relative mt-4 max-w-xl text-lg">
                     Stop manually managing leads and start building relationships. Our AI-powered CRM handles the busywork, personalizes every interaction, and gives your team the power to close deals faster than ever.

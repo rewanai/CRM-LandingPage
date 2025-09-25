@@ -1,4 +1,5 @@
 "use client";
+import { shiba } from "@/lib/fonts"; // ✅ adjust path if needed
 
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
@@ -71,10 +72,11 @@ const Feature278 = () => {
         <section className="bg-accent/60 py-20">
             <div className="mx-auto w-full max-w-[1280px] px-6 flex flex-col items-center justify-center">
                 {/* Heading */}
-                <h2 className="relative z-20 py-4 font-sans text-4xl font-semibold text-center tracking-tighter md:text-5xl md:py-7">
+                <h2 className={`${shiba.className} relative z-20 py-4 font-sans text-4xl font-semibold text-center tracking-tighter md:text-5xl md:py-7`}>
                     Why Teams Love <br className="hidden lg:block" />{" "}
                     <span className="opacity-100 text-primary">Rewan CRM</span>
                 </h2>
+
 
                 {/* Grid */}
                 <div className="relative mt-12 grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

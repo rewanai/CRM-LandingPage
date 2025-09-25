@@ -1,6 +1,7 @@
 import React from "react";
 import { Ripple } from "@/components/magicui/ripple";
 import { Button } from "@/components/ui/button";
+import { shiba } from "@/lib/fonts"; // ✅ adjust path as needed
 
 const Feature252 = () => {
     return (
@@ -30,9 +31,10 @@ const Feature252 = () => {
                                 The CRM Built to Automate Your Workflow
 
               </p>
-                            <h1 className="text-5xl font-medium tracking-tighter lg:text-7xl">
-                                Your AI Cyber Employee
-              </h1>
+                            <h1 className={`${shiba.className} text-5xl font-normal tracking-tighter lg:text-7xl`}>
+                                Your AI Digital Workforce
+</h1>
+
 
                         </div>
 

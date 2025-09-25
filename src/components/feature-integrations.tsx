@@ -1,13 +1,15 @@
 "use client";
+import { shiba } from "@/lib/fonts"; // adjust path if necessary
 
 import { Code, MessageCircle, Text } from "lucide-react";
 
 const Feature130 = () => {
     return (
         <section id="how" className="bg-accentt mx-auto w-full max-w-7xl px-6 py-32">
-            <h2 className="text-2xl font-semibold md:text-4xl">
+            <h2 className={`${shiba.className} text-2xl font-normal md:text-4xl`}>
                 Seamless CRM for Smarter Business Growth
-      </h2>
+</h2>
+
 
             {/* Top Row: Two Feature Cards */}
             <div className="mt-12 mb-6 flex flex-col gap-6 xl:flex-row">
